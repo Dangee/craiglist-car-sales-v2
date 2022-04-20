@@ -45,9 +45,6 @@ ODOMETER_CAT = app_categories['odometer_cat']
 CAR_WEBSITE = 'https://sfbay.craigslist.org/search/cta'
 IMAGE_URL = 'https://www.conceptcarz.com/'
 
-# Google sheet with test data
-GOOGLE_SHEET_TEST_DATA = None
-
 
 VERBATIMS = {
   'no_market': [

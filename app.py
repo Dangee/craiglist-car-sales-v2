@@ -131,19 +131,20 @@ app.layout = html.Div(
       ),
       html.Div(children=
         [
-          html.Br(),
-          html.Br(),
-          html.Br(),
-          html.Div(children=
-            [
-              dcc.Graph(figure=p.predictor_model['r2_go_fig'], id='r2-fig-id'),
-              dcc.Graph(figure=p.predictor_model['rmse_go_fig'], id='rmse-go-fig-id'),
-              dcc.Graph(figure=p.predictor_model['coeff_go_fig'], id='coeff-go-fig-id'),
-              html.Br(),
-            ]
+          html.Div(dcc.Graph(figure=p.predictor_model['r2_go_fig'], id='r2-fig-id'),
+                   className = "six columns"
           ),
+          html.Div(dcc.Graph(figure=p.predictor_model['rmse_go_fig'], id='rmse-go-fig-id'),
+                   className = "six columns"
+          ),
+          html.Div(dcc.Graph(figure=p.predictor_model['coeff_go_fig'], id='coeff-go-fig-id'),
+            className = "twelve columns"
+          ),
+        ],
+        className="row"),
+      html.Div(children=
+        [
           html.Br(),
-          html.A('Google Spreadsheet', href=p.GOOGLE_SHEET_TEST_DATA),
           html.Br(),
           html.A('Code on Github', href=GITHUB_LINK),
           html.Br(),
@@ -151,7 +152,8 @@ app.layout = html.Div(
           html.Br(),
           html.A("Car Image - courtesy of conceptcarz.com", href=p.IMAGE_URL)
         ],
-        className="twelve columns")
+        className="row"
+      )
     ]
   )
 
