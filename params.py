@@ -8,7 +8,7 @@ import sklearn
 
 # Application log level
 LOG_LEVEL = 'DEBUG'
-# LOG_LEVEL = 'INFO'
+LOG_LEVEL = 'INFO'
 
 # read in predictor model objects
 with open('./analysis/components_data/predictor_model.pkl', 'rb') as f:
