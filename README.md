@@ -1,10 +1,10 @@
 ## View the finished model:
 
-https://dgo-car-price-predictor.herokuapp.com/ |
+https://dgo-car-price-predictor-v2.herokuapp.com/
 
 ### Data Analysis and model building
 
-https://github.com/Dangee/craiglist-car-sales/blob/main/analysis/used%20car%20sales%20data%20set-V2.ipynb 
+https://github.com/Dangee/craiglist-car-sales-v2/blob/main/analysis/used%20car%20sales%20data%20set-V3.ipynb
 
 ### Test Data 
 
